@@ -1,56 +1,56 @@
 #!/usr/bin/env python3
-#Use these commands in Kali to install required software:
+#Utilisez ces commandes dans Kali pour installer le logiciel requis
 #  sudo apt install python3-pip
 #  pip install python-nmap
-# Import nmap so we can use it for the scan
+# Importer nmap afin que nous puissions l'utiliser pour l'analyse
 import nmap
-# We need to create regular expressions to ensure that the input is correctly formatted.
+# Nous devons créer des expressions régulières pour nous assurer que l'entrée est correctement formatée
 import re
-# Regular Expression Pattern to recognise IPv4 addresses.
+# Modèle d'expression régulière pour reconnaître les adresses IPv4.
 ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
-# Regular Expression Pattern to extract the number of ports you want to scan. 
-# You have to specify <lowest_port_number>-<highest_port_number> (ex 10-100)
+# Modèle d'expression régulière pour extraire le nombre de ports que vous souhaitez analyser.
+# Spécification <lowest_port_number>-<highest_port_number> (ex 10-100)
 port_range_pattern = re.compile("([0-9]+)-([0-9]+)")
-# Initialising the port numbers, will be using the variables later on.
+# Initialiser les numéros de port, utilisera les variables plus tard.
 port_min = 0
 port_max = 65535
-# This port scanner uses the Python nmap module.
-# You'll need to install the following to get it work on Linux:
-# Step 1: sudo apt install python3-pip
-# Step 2: pip install python-nmap
-# Basic user interface header
-print(r"SCAN VULNERABILITY")
+# Ce scanner de port utilise le module Python nmap.
+# Vous devrez installer les éléments suivants pour le faire fonctionner sous Linux :
+# Étape 1 : sudo apt install python3-pip
+# Étape 2 : pip install python-nmap
+# En-tête de l'interface utilisateur de base
+print(r"PORT SCANNER")
 print("\n****************************************************************")
 open_ports = []
-# Ask user to input the ip address they want to scan.
+# Demandez à l'utilisateur de saisir l'adresse IP qu'il souhaite analyser.
 while True:
-    ip_add_entered = input("\nPlease enter the ip address that you want to scan: ")
+    ip_add_entered = input("\nVeuillez entrer l'adresse IP que vous souhaitez analyser : ")
     if ip_add_pattern.search(ip_add_entered):
-        print(f"{ip_add_entered} is a valid ip address")
+        print(f"{ip_add_entered} est une adresse IP valide")
         break
 while True:
-    # You can scan 0-65535 ports. This scanner is basic and doesn't use multithreading so scanning 
-    # all the ports is not advised.
-    print("Please enter the range of ports you want to scan in format: <int>-<int> (ex would be 60-120)")
-    port_range = input("Enter port range: ")
+    # Vous pouvez scanner 0-65535 ports. Ce scanner est basique et n'utilise pas le multithreading, donc la numérisation 
+    # tous les ports ne sont pas conseillés.
+    print("Veuillez saisir la plage de ports que vous souhaitez analyser au format : <int>-<int> (ex would be 60-120)")
+    port_range = input("Saisissez la plage de ports :")
     port_range_valid = port_range_pattern.search(port_range.replace(" ",""))
     if port_range_valid:
         port_min = int(port_range_valid.group(1))
         port_max = int(port_range_valid.group(2))
         break
 nm = nmap.PortScanner()
-# We're looping over all of the ports in the specified range.
+# Nous parcourons tous les ports de la plage spécifiée.
 for port in range(port_min, port_max + 1):
     try:
-        # The result is quite interesting to look at. You may want to inspect the dictionary it returns. 
-        # It contains what was sent to the command line in addition to the port status we're after. 
-        # For in nmap for port 80 and ip 10.0.0.2 you'd run: nmap -oX - -p 89 -sV 10.0.0.2
+         
+        # Il contient ce qui a été envoyé à la ligne de commande en plus du statut du port que nous recherchons. 
+        # Pour nmap pour le port (num port) et l'ip 192.X.X.X, vous exécuterez : nmap -oX - -p (num port) -sV 192.X.X.X
         result = nm.scan(ip_add_entered, str(port))
-        # Uncomment following line and look at dictionary
+        # Décommentez la ligne suivante et regardez le dictionnaire
         # print(result)
-        # We extract the port status from the returned object
+        # Nous extrayons le statut du port de l'objet retourné
         port_status = (result['scan'][ip_add_entered]['tcp'][port]['state'])
         print(f"Port {port} is {port_status}")
     except:
-        # We cannot scan some ports and this ensures the program doesn't crash when we try to scan them.
+        # Nous ne pouvons pas analyser certains ports et cela garantit que le programme ne plante pas lorsque nous essayons de les analyser.
         print(f"Cannot scan port {port}.")
