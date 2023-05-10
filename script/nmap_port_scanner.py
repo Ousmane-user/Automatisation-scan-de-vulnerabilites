@@ -19,7 +19,7 @@ port_max = 65535
 # Étape 1 : sudo apt install python3-pip
 # Étape 2 : pip install python-nmap
 # En-tête de l'interface utilisateur de base
-print(r"PORT SCANNER")
+print(r"VOUS SOUHAITEZ EFFECTUER UN SCAN COMPLETE DES PORTS ? ")
 print("\n****************************************************************")
 open_ports = []
 # Demandez à l'utilisateur de saisir l'adresse IP qu'il souhaite analyser.
