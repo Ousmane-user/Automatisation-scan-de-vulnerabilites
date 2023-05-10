@@ -1,8 +1,8 @@
 # Automatisation-scan-de-vulnerabilites
 
-note projet d'études : 
+J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont 1 Kali linux pour pouvoir effectuer crée un script qui va nous permettre d'analyser les vulnérabilités : 
 
-install 3 vm dont un en kali pour exploiter les vulns des hotes vulns
+
 création fichier python script nmap
 chmod fichier script python nmap
 lancement script nmap 
