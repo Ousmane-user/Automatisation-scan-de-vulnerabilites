@@ -1,6 +1,6 @@
-# Automatisation-scan-de-vulnerabilites
+# Automatisation-scan-de-vulnerabilites et OSINT
 
-J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont 1 Kali linux pour pouvoir effectuer crée un script qui va nous permettre d'analyser les vulnérabilités : 
+J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont un Kali linux pour pouvoir effectuer crée un script qui va nous permettre d'analyser les vulnérabilités : 
 
 création fichier python script nmap
 chmod fichier script python nmap
