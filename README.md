@@ -1,4 +1,4 @@
-# Automatisation-scan-de-vulnerabilites et OSINT
+# Automatisation-scan-de-vulnerabilites avec Nmap et Nessus
 
 J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont un Kali linux pour pouvoir effectuer crée un script qui va nous permettre d'analyser les vulnérabilités : 
 
