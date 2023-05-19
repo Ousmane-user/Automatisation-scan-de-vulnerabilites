@@ -1,7 +1,14 @@
 # Automatisation-scan-de-vulnerabilites avec Nmap et Nessus
 
-J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont un Kali linux pour pouvoir effectuer crée un script qui va nous permettre d'analyser les vulnérabilités : 
+J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont un Kali linux pour pouvoir effectuer un script qui va nous permettre d'analyser les vulnérabilités : 
+Après avoir crée ces vm, dans kali linux j'ai crée un fichier que j'ai nommé 
 
+
+
+
+Qu'est ce que l'outil Nmap ? 
+L'outil Nmap est un scanner de ports libre conçu pour détecter les ports ouverts, d'identifier les services hébergés et obtenir des informations sur le système d'exploitation d'un ordinateur distant. 
+Cet outil est devenu une référence pour les administrateurs réseaux car l'audit des résultats de Nmap fournit des indications sur la sécurtié d'un réseau. 
 création fichier python script nmap
 chmod fichier script python nmap
 lancement script nmap 
