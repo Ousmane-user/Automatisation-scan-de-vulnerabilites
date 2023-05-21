@@ -1,4 +1,4 @@
-# Automatisation scan de vulnerabilites avec Nmap + OSINT avec OWASP
+# Automatisation scan de vulnerabilites avec Nmap + OSINT
 
 J'ai installé Kali linux pour pouvoir effectuer un script qui va nous permettre d'analyser les vulnérabilités : 
 J'ai crée un fichier que j'ai nommé nmap_port_scanner.py pour faire un script nmap. 
@@ -21,7 +21,3 @@ lancement commande manuellement :
 lancement script nmap :
 - python nmap_port_scanner.py
 
-
-Qu'est ce que l'outil OWASP ?
-
-L'outil OWASP Nettacker est créé pour automatiser la collecte d'informations, l'analyse des vulnérabilités et éventuellement générer un rapport pour les réseaux, y compris les services, les bogues, les vulnérabilités, les erreurs de configuration et d'autres informations. Ce logiciel utilisera TCP SYN, ACK, ICMP et de nombreux autres protocoles afin de détecter et de contourner les périphériques Firewall/IDS/IPS. En tirant parti d'une méthode unique dans OWASP Nettacker pour découvrir des services et des appareils protégés tels que SCADA. Cela ferait un avantage concurrentiel par rapport aux autres scanners, ce qui en ferait l'un des meilleurs.
