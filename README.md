@@ -1,4 +1,4 @@
-# Automatisation-scan-de-vulnerabilites avec Nmap
+# Automatisation scan de vulnerabilites avec Nmap + OSINT avec OWASP
 
 J'ai installé 3 VM (Ubuntu et Windows Server 2019) dont un Kali linux pour pouvoir effectuer un script qui va nous permettre d'analyser les vulnérabilités : 
 Après avoir crée ces vm, dans kali linux j'ai crée un fichier que j'ai nommé nmap_port_scanner.py pour faire un script nmap. 
