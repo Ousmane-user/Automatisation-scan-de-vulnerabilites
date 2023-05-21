@@ -5,7 +5,7 @@ import json
 def generate_report(vulnerabilities):
     report = ""
     for vuln in vulnerabilities:
-        report += "Vulnérabilité : {}\n".format(vuln['name'])
+        report += "Vulnérabilité : {}\n".format(vuln['vulnerabilites'])
         report += "Description : {}\n".format(vuln['description'])
         report += "Gravité : {}\n".format(vuln['severity'])
         report += "Solution recommandée : {}\n".format(vuln['solution'])
