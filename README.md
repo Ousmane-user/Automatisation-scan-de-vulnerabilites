@@ -1,6 +1,6 @@
 # Automatisation scan des ports avec Nmap + OSINT
 
-J'ai installé Kali linux pour pouvoir effectuer un script qui va nous permettre d'analyser les vulnérabilités : 
+J'ai installé Kali linux pour pouvoir effectuer un script qui va nous permettre de scanner les ports de manière automatisé : 
 J'ai crée un fichier que j'ai nommé nmap_port_scanner.py pour faire un script nmap. 
 
 Tout d'abord qu'est ce que l'outil Nmap ? 
