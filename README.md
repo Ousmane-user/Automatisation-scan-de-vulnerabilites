@@ -21,3 +21,11 @@ lancement commande manuellement :
 lancement script nmap :
 - python nmap_port_scanner.py
 
+
+Installation de Nessus 
+
+Qu'est ce que Nessus ? 
+
+Nessus est le scanner de vulnérabilité réseaux de Tenable Network Security. Par rapport aux autres scanners de vulnérabilité, Nessus a la particularité d'être basé sur une architecture client/serveur et d'être compatible avec Windows et Linux. En plus, Nessus stocke et gère toutes ses failles de sécurité grâce à un système de plugins.
+
+Nessus est un logiciel qui effectue de réelles attaques et présente le résultat de ces attaques sous forme de rapport. Son utilisation peut donc être à double tranchant. D'un côté, une équipe sécurité peut l'utiliser pour scanner son réseau dans le but de prévenir les intrusions et les dénis de service. D'un autre côté, un hacker peut l'utiliser à des fins malhonnêtes et en profiter pour exploiter les vulnérabilités déclarées.
