@@ -1,14 +1,13 @@
 # Automatisation scan de vulnerabilites + Nmap
+Installation Kali linux pour pouvoir effectuer un script qui va nous permettre de scanner les ports de manière automatisé : 
+création d'un fichier nommé nmap_port_scanner.py pour faire un script nmap. 
 
-J'ai installé Kali linux pour pouvoir effectuer un script qui va nous permettre de scanner les ports de manière automatisé : 
-J'ai crée un fichier que j'ai nommé nmap_port_scanner.py pour faire un script nmap. 
-
-Tout d'abord qu'est ce que l'outil Nmap ? 
+Qu'est ce que l'outil Nmap ? 
 
 L'outil Nmap est un scanner de ports libre conçu pour détecter les ports ouverts, d'identifier les services hébergés et obtenir des informations sur le système d'exploitation d'un ordinateur distant. 
 Cet outil est devenu une référence pour les administrateurs réseaux car l'audit des résultats de Nmap fournit des indications sur la sécurité d'un réseau. 
 
-Voici les étapes que j'ai effectué pour effectuer un script nmap :
+Voici les étapes pour effectuer un script nmap :
 
 1 - création fichier python script nmap
 2 - changement de droit (chmod) du fichier script python nmap
