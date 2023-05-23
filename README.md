@@ -2,7 +2,7 @@
 Installation Kali linux pour pouvoir effectuer un script qui va nous permettre de scanner les ports de manière automatisé : 
 création d'un fichier nommé nmap_port_scanner.py pour faire un script nmap. 
 
-Qu'est ce que l'outil Nmap ? 
+QU'EST CE QUE NMAP ? 
 
 L'outil Nmap est un scanner de ports libre conçu pour détecter les ports ouverts, d'identifier les services hébergés et obtenir des informations sur le système d'exploitation d'un ordinateur distant. 
 Cet outil est devenu une référence pour les administrateurs réseaux car l'audit des résultats de Nmap fournit des indications sur la sécurité d'un réseau. 
@@ -25,11 +25,9 @@ lancement script nmap :
 
 
 
-
-
 Installation de Nessus 
 
-Qu'est ce que Nessus ? 
+QU'EST CE QUE NESSUS ? 
 
 Nessus est le scanner de vulnérabilité réseaux de Tenable Network Security. Par rapport aux autres scanners de vulnérabilité, Nessus a la particularité d'être basé sur une architecture client/serveur et d'être compatible avec Windows et Linux. En plus, Nessus stocke et gère toutes ses failles de sécurité grâce à un système de plugins.
 
