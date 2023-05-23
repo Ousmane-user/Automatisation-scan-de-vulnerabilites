@@ -25,8 +25,6 @@ lancement script nmap :
 
 
 
-Installation de Nessus 
-
 QU'EST CE QUE NESSUS ? 
 
 Nessus est le scanner de vulnérabilité réseaux de Tenable Network Security. Par rapport aux autres scanners de vulnérabilité, Nessus a la particularité d'être basé sur une architecture client/serveur et d'être compatible avec Windows et Linux. En plus, Nessus stocke et gère toutes ses failles de sécurité grâce à un système de plugins.
